@@ -70,7 +70,8 @@ func main() {
 
     fmt.Fprintf(writer, "\n")
 
-    writer.Flush()
+    err = writer.Flush()
+    checkError(err)
 }
 
 func readLine(reader *bufio.Reader) string {
