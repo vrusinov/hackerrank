@@ -18,19 +18,19 @@ func repeatedString(s string, n int64) int64 {
   var loops int64 = n / stringLength
   var prefixLength int64 = n % stringLength
 
-  var occurancesInString int64 = 0
-  var occurancesInPrefix int64 = 0
+  var occurrencesInString int64 = 0
+  var occurrencesInPrefix int64 = 0
 
   for pos, char := range s {
     if char == 'a' {
-      occurancesInString++
+      occurrencesInString++
       if int64(pos) < prefixLength {
-        occurancesInPrefix++
+        occurrencesInPrefix++
       }
     }
   }
 
-  return occurancesInString * loops + occurancesInPrefix
+  return occurrencesInString * loops + occurrencesInPrefix
 }
 
 func main() {
