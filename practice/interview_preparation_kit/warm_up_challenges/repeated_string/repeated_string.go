@@ -56,7 +56,8 @@ func main() {
 
     fmt.Fprintf(writer, "%d\n", result)
 
-    writer.Flush()
+    err = writer.Flush()
+    checkError(err)
 }
 
 func readLine(reader *bufio.Reader) string {
