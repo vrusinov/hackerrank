@@ -4,14 +4,12 @@
 https://www.hackerrank.com/challenges/counting-valleys/problem
 """
 
-import math
 import os
-import random
-import re
-import sys
+from typing import Any
 
 
-def countingValleys(steps, path):
+def countingValleys(steps: Any, path: str) -> int:
+    del steps  # Unused
     current_level = 0
     in_valley = False
     valleys = 0
