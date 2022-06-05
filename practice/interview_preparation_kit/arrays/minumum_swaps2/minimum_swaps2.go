@@ -26,11 +26,10 @@ func minimumSwaps(arr []int32) int32 {
 		arr[i] = arr[i] - min
 	}
 	// Build a map of value to index
-	v_to_i := make(map[int32]int32, len(arr))
+	vToI := make(map[int32]int32, len(arr))
 	for i, v := range arr {
-		v_to_i[v] = int32(i)
+		vToI[v] = int32(i)
 	}
-	// fmt.Printf("v to i: %v\n", v_to_i)
 	// Now we have an array with values from 0 to N.
 	var swaps int32 = 0
 	for i, v := range arr {
@@ -40,10 +39,10 @@ func minimumSwaps(arr []int32) int32 {
 			continue
 		}
 		// else swap is needed.
-		arr[v_to_i[int32(i)]] = v
+		arr[vToI[int32(i)]] = v
 		arr[i] = int32(i)
-		v_to_i[v] = v_to_i[int32(i)]
-		v_to_i[int32(i)] = int32(i)
+		vToI[v] = vToI[int32(i)]
+		vToI[int32(i)] = int32(i)
 		swaps += 1
 		// fmt.Printf("after swap: arr=%v\n", arr)
 	}
