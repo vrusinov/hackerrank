@@ -41,7 +41,7 @@ func main() {
     var a []int32
 
     for i := 0; i < 3; i++ {
-        aItemTemp, err := strconv.ParseInt(aTemp[i], 10, 64)
+        aItemTemp, err := strconv.ParseInt(aTemp[i], 10, 32)
         checkError(err)
         aItem := int32(aItemTemp)
         a = append(a, aItem)
@@ -52,7 +52,7 @@ func main() {
     var b []int32
 
     for i := 0; i < 3; i++ {
-        bItemTemp, err := strconv.ParseInt(bTemp[i], 10, 64)
+        bItemTemp, err := strconv.ParseInt(bTemp[i], 10, 32)
         checkError(err)
         bItem := int32(bItemTemp)
         b = append(b, bItem)
