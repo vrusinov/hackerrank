@@ -130,3 +130,5 @@ dmypy.json
 
 # https://slscan.io/
 reports/
+
+.vscode
