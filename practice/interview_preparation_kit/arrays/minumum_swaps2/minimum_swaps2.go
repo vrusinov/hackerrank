@@ -22,7 +22,7 @@ func minimumSwaps(arr []int32) int32 {
 		}
 	}
 	// Now, let's "normalize" the array.
-	for i, _ := range arr {
+	for i := range arr {
 		arr[i] = arr[i] - min
 	}
 	// Build a map of value to index
@@ -43,7 +43,7 @@ func minimumSwaps(arr []int32) int32 {
 		arr[i] = int32(i)
 		vToI[v] = vToI[int32(i)]
 		vToI[int32(i)] = int32(i)
-		swaps += 1
+		swaps++
 		// fmt.Printf("after swap: arr=%v\n", arr)
 	}
 	return swaps
