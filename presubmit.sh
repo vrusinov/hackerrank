@@ -2,6 +2,9 @@
 
 set -e
 
+# Install hook:
+ln -sf ../../presubmit.sh .git/hooks/pre-commit
+
 if which docker ;
 then
     docker run --rm -e "WORKSPACE=${PWD}" -v "$PWD:/app" shiftleft/sast-scan scan --build
@@ -17,3 +20,4 @@ for d in $(find . -name \*.go | sed -r 's|/[^/]+$||' |sort -u) ; do
 done
 
 pytype .
+

@@ -7,7 +7,9 @@ https://www.hackerrank.com/challenges/simple-array-sum/problem
 import os
 import sys
 
-def simpleArraySum(ar):
+from typing import Sequence
+
+def simpleArraySum(ar: Sequence):
     return sum(ar)
 
 if __name__ == '__main__':
