@@ -21,3 +21,5 @@ done
 
 pytype .
 
+# Install presubmit
+ln -sf ../../presubmit.sh .git/hooks/pre-commit
