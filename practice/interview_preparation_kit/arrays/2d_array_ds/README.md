@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 [2D Array - DS](https://www.hackerrank.com/challenges/2d-array/problem)
 
 Given a  2D Array, arr:

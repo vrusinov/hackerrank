@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+//
+// SPDX-License-Identifier: Apache-2.0
+
 // Package main implements "Compare the Triplets" problem
 // https://www.hackerrank.com/challenges/compare-the-triplets/problem
 package main

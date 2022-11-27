@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+//
+// SPDX-License-Identifier: Apache-2.0
+
 use std::cmp::max;
 
 fn minimum_bribes(_t: i32, queue: Vec<i32>) -> Result<i32, &'static str> {

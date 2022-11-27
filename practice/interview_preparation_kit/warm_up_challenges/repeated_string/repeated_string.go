@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+//
+// SPDX-License-Identifier: Apache-2.0
+
 // Package main implements Repeated String problem
 //
 // https://www.hackerrank.com/challenges/repeated-string/problem

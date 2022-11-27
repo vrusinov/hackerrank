@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+#
+# SPDX-License-Identifier: Apache-2.0
+
 [package]
 name = "jumping_on_the_clouds"
 version = "1.0.0"

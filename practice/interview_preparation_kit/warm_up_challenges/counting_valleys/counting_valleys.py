@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+# SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+#
+# SPDX-License-Identifier: Apache-2.0
+
 """Counting Valleys.
 
 https://www.hackerrank.com/challenges/counting-valleys/problem

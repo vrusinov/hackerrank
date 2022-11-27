@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+#
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 
 # Install hook:
@@ -20,6 +24,8 @@ for d in $(find . -name \*.go | sed -r 's|/[^/]+$||' |sort -u) ; do
 done
 
 pytype .
+
+reuse lint
 
 # Install presubmit
 ln -sf ../../presubmit.sh .git/hooks/pre-commit

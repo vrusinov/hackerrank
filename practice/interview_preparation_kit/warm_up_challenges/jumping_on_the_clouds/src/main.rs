@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Vladimir Rusinov
+//
+// SPDX-License-Identifier: Apache-2.0
+
 // Jumping on the Clouds
 //
 // https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
