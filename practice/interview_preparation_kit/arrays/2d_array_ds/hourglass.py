@@ -6,7 +6,9 @@
 
 import os
 
-def hourglass_sum(arr, i, j):
+from typing import Sequence
+
+def hourglass_sum(arr: Sequence[Sequence[int]], i: int, j: int):
     """Calculates hourglass for i,j"""
     return (
         arr[i][j]   + arr[i][j+1]   + arr[i][j+2] +
@@ -14,7 +16,7 @@ def hourglass_sum(arr, i, j):
         arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]
     )
 
-def max_hourglass_sum(arr):
+def max_hourglass_sum(arr: Sequence[Sequence[int]]):
     # This will be calculated twice.
     # Meh.
     maximum = hourglass_sum(arr, 0, 0)
