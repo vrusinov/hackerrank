@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import unittest
-import left_rotation
 
+import left_rotation
 from parameterized import parameterized
 
 

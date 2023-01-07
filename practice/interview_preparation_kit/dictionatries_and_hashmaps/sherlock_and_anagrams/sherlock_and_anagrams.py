@@ -7,8 +7,8 @@
 https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 """
 
-import os
 import collections
+import os
 
 
 def sherlock_and_anagrams(s: str) -> int:

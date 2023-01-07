@@ -10,7 +10,6 @@ https://www.hackerrank.com/challenges/simple-array-sum/problem
 """
 
 import os
-
 from typing import Sequence
 
 

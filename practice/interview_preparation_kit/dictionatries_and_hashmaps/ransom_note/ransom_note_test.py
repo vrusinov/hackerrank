@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import unittest
-import ransom_note
 
+import ransom_note
 from parameterized import parameterized
 
 

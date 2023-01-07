@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import unittest
-import sherlock_and_anagrams
 
+import sherlock_and_anagrams
 from parameterized import parameterized
 
 
