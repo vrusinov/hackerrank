@@ -29,7 +29,7 @@ def rotLeft(a, d):
     if d > len(a):
         d = d % len(a)
     # Very easy to do in python - split array by 2 in d'th
-    # emelent. Join two of them together.
+    # element. Join two of them together.
     return a[d:] + a[:d]
 
 
