@@ -22,3 +22,11 @@ repos:
     rev: v3.3.1
     hooks:
     -   id: pyupgrade
+-   repo: local
+    hooks:
+    # TODO: split into native hooks
+    -   id: presubmit-sh
+        name: presubmit-sh
+        entry: bash presubmit.sh
+        language: system
+        always_run: true
