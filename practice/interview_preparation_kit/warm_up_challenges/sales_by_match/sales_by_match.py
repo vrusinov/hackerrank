@@ -20,7 +20,7 @@ def sockMerchant(n, ar: Sequence[int]):
     for color in ar:
         socks_per_color[color] += 1
     total_paris = 0
-    for color, num in socks_per_color.items():
+    for _color, num in socks_per_color.items():
         total_paris += num // 2
     return total_paris
 

@@ -37,11 +37,9 @@ if __name__ == '__main__':
 
     q = int(input().strip())
 
-    for q_itr in range(q):
+    for _ in range(q):
         s = input()
-
         result = sherlock_and_anagrams(s)
-
         fptr.write(str(result) + '\n')
 
     fptr.close()
