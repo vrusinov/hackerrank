@@ -9,11 +9,7 @@
 https://www.hackerrank.com/challenges/a-very-big-sum/problem
 """
 
-import math
 import os
-import random
-import re
-import sys
 
 
 def aVeryBigSum(ar):

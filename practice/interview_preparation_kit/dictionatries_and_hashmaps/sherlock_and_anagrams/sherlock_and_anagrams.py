@@ -1,3 +1,4 @@
+#!/bin/python3
 # SPDX-FileCopyrightText: 2022 Vladimir Rusinov
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -5,8 +6,6 @@
 
 https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 """
-
-#!/bin/python3
 
 import os
 import collections
@@ -31,6 +30,7 @@ def sherlock_and_anagrams(s: str) -> int:
         if count > 1:
             ret += count * (count - 1) // 2
     return ret
+
 
 if __name__ == '__main__':
     fptr = open(os.environ.get('OUTPUT_PATH', '/dev/stdout'), 'w')

@@ -15,7 +15,8 @@ class SherlockTest(unittest.TestCase):
         ("abcd", 0),
     ])
     def test_happy(self, s, expected):
-        self.assertEqual(sherlock_and_anagrams.sherlock_and_anagrams(s), expected)
+        self.assertEqual(
+            sherlock_and_anagrams.sherlock_and_anagrams(s), expected)
 
 
 if __name__ == '__main__':

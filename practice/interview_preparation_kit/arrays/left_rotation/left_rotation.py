@@ -12,6 +12,7 @@ https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
 
 import os
 
+
 def rotLeft(a, d):
     """
     Performs left rotation of array a by d rotations.
@@ -36,13 +37,9 @@ if __name__ == '__main__':
     output_path = os.environ.get('OUTPUT_PATH', '/dev/stdout')
     fptr = open(output_path, 'w')
 
-
     first_multiple_input = input().rstrip().split()
-
     n = int(first_multiple_input[0])
-
     d = int(first_multiple_input[1])
-
     a = list(map(int, input().rstrip().split()))
 
     result = rotLeft(a, d)

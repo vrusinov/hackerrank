@@ -10,12 +10,13 @@ https://www.hackerrank.com/challenges/simple-array-sum/problem
 """
 
 import os
-import sys
 
 from typing import Sequence
 
+
 def simpleArraySum(ar: Sequence[int]) -> int:
     return sum(ar)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

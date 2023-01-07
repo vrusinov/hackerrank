@@ -2,10 +2,12 @@
 # SPDX-FileCopyrightText: 2022 Vladimir Rusinov
 #
 # SPDX-License-Identifier: Apache-2.0
-"""Ransom Note - https://www.hackerrank.com/challenges/ctci-ransom-note/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
-"""
+"""Ransom Note
+https://www.hackerrank.com/challenges/ctci-ransom-note/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
+"""  # noqa: E501
 
 import collections
+
 
 def check_magazine(magazine, note):
     magazine_words = collections.Counter()
@@ -17,6 +19,7 @@ def check_magazine(magazine, note):
         else:
             return False
     return True
+
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
