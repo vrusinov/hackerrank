@@ -30,3 +30,8 @@ repos:
         entry: bash presubmit.sh
         language: system
         always_run: true
+-   repo: https://github.com/pycqa/isort
+    rev: 5.11.4
+    hooks:
+      - id: isort
+        name: isort (python)
