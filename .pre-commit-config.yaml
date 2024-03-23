@@ -46,6 +46,6 @@ repos:
       # Respect `exclude` and `extend-exclude` settings.
       args: ["--force-exclude"]
 - repo: https://github.com/golangci/golangci-lint
-  rev: "v1.52.2"
+  rev: "v1.53.3"
   hooks:
     - id: golangci-lint
