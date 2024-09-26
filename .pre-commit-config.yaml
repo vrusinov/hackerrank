@@ -40,11 +40,12 @@ repos:
     hooks:
       - id: typos
 - repo: https://github.com/charliermarsh/ruff-pre-commit
-  rev: 'v0.0.215'
+  rev: 'v0.0.292'
   hooks:
     - id: ruff
       # Respect `exclude` and `extend-exclude` settings.
       args: ["--force-exclude"]
+    - id: ruff-format
 - repo: https://github.com/golangci/golangci-lint
   rev: "v1.53.3"
   hooks:
