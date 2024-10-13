@@ -6,20 +6,20 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v5.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
 -   repo: https://github.com/PyCQA/flake8
-    rev: 6.0.0
+    rev: 7.1.1
     hooks:
     -   id: flake8
         additional_dependencies:
             - flake8-bugbear==23.1.20
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.18.0
     hooks:
     -   id: pyupgrade
 -   repo: local
@@ -31,23 +31,23 @@ repos:
         language: system
         always_run: true
 -   repo: https://github.com/pycqa/isort
-    rev: 5.11.5
+    rev: 5.13.2
     hooks:
       - id: isort
         name: isort (python)
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.13.6
+    rev: v1.26.0
     hooks:
       - id: typos
 - repo: https://github.com/charliermarsh/ruff-pre-commit
-  rev: 'v0.0.292'
+  rev: 'v0.6.9'
   hooks:
     - id: ruff
       # Respect `exclude` and `extend-exclude` settings.
       args: ["--force-exclude"]
     - id: ruff-format
 - repo: https://github.com/golangci/golangci-lint
-  rev: "v1.53.3"
+  rev: "v1.61.0"
   hooks:
     - id: golangci-lint
 - repo: https://github.com/fsfe/reuse-tool
