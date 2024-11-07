@@ -54,3 +54,7 @@ repos:
   rev: "v4.0.3"
   hooks:
     - id: reuse
+- repo: https://github.com/cpplint/cpplint
+  rev: "2.0.0"
+  hooks:
+    - id: cpplint
