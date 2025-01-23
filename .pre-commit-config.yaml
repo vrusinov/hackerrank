@@ -1,7 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Vladimir Rusinov
-#
+# SPDX-FileCopyrightText: 2023-2025 Vladimir Rusinov
 # SPDX-License-Identifier: Apache-2.0
-
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -19,17 +17,9 @@ repos:
           - flake8-bugbear==24.2.6
           - wemake-python-styleguide==0.19.2
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.0
+    rev: v3.19.1
     hooks:
       - id: pyupgrade
-  - repo: local
-    hooks:
-      # TODO: split into native hooks
-      - id: presubmit-sh
-        name: presubmit-sh
-        entry: bash presubmit.sh
-        language: system
-        always_run: true
   - repo: https://github.com/pycqa/isort
     rev: 5.13.2
     hooks:
@@ -40,18 +30,18 @@ repos:
     hooks:
       - id: typos
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: 'v0.7.3'
+    rev: 'v0.9.3'
     hooks:
       - id: ruff
         # Respect `exclude` and `extend-exclude` settings.
         args: ["--force-exclude"]
       - id: ruff-format
   - repo: https://github.com/golangci/golangci-lint
-    rev: "v1.61.0"
+    rev: "v1.63.4"
     hooks:
       - id: golangci-lint
   - repo: https://github.com/fsfe/reuse-tool
-    rev: "v4.0.3"
+    rev: "v5.0.2"
     hooks:
       - id: reuse
   - repo: https://github.com/cpplint/cpplint
@@ -63,14 +53,18 @@ repos:
     hooks:
       - id: yamllint
   - repo: https://github.com/markdownlint/markdownlint.git
-    rev: v0.13.0
+    rev: v0.12.0
     hooks:
       - id: markdownlint
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.42.0
+    rev: v0.43.0
     hooks:
       - id: markdownlint
   - repo: https://github.com/pylint-dev/pylint
-    rev: v3.3.1
+    rev: v3.3.3
     hooks:
       - id: pylint
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: 'v19.1.7'
+    hooks:
+      - id: clang-format
