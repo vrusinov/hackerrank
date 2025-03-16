@@ -1,4 +1,4 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov
 # SPDX-License-Identifier: Apache-2.0
 [flake8]
-extend-ignore = WPS336,WPS110,WPS421
+extend-ignore = WPS336,WPS110,WPS421,WPS440

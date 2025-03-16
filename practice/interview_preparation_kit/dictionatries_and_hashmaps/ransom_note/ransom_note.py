@@ -1,15 +1,25 @@
 #!/bin/python3
-# SPDX-FileCopyrightText: 2022 Vladimir Rusinov
-#
+# SPDX-FileCopyrightText: 2022-2025 Vladimir Rusinov
 # SPDX-License-Identifier: Apache-2.0
-"""Ransom Note
+
+"""Ransom Note.
+
 https://www.hackerrank.com/challenges/ctci-ransom-note/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
 """  # noqa: E501
 
 import collections
 
 
-def check_magazine(magazine, note):
+def check_magazine(magazine: str, note: str) -> bool:
+    """Check if magazine has enough words to create note.
+
+    Args:
+        magazine: the magazine
+        note: the note
+
+    Returns:
+        whether the note can be created from the magazine.
+    """
     magazine_words = collections.Counter()
     for word in magazine.split():
         magazine_words[word] += 1
@@ -21,16 +31,21 @@ def check_magazine(magazine, note):
     return True
 
 
-if __name__ == '__main__':
+def main():
+    """Run the program."""
     first_multiple_input = input().rstrip().split()
 
-    unused_m = int(first_multiple_input[0])
-    unused_n = int(first_multiple_input[1])
+    unused_m = int(first_multiple_input[0])  # noqa: F841
+    unused_n = int(first_multiple_input[1])  # noqa: F841
 
     magazine = input().rstrip()
     note = input().rstrip()
 
     if check_magazine(magazine, note):
-        print("Yes")
+        print('Yes')
     else:
-        print("No")
+        print('No')
+
+
+if __name__ == '__main__':
+    main()
